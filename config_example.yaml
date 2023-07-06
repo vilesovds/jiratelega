@@ -1,0 +1,12 @@
+telegram_bot_token: <bot_token>
+
+jira:
+  server: https://vilesovds.atlassian.net/
+  auth:
+    email: vilesovds@gmail.com
+    token: <jira_token>
+  project_key: JIRA
+
+db:
+  url: sqlite:///users.db
+  users_table: users
