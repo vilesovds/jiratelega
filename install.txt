@@ -1,0 +1,21 @@
+0. Переёдите в папку с проектом
+1.1 Для установки можно создать virtual environments (https://docs.python.org/3/library/venv.html)
+python3 -m venv venv
+1.2 Далее нужно активировать настройки среды
+Linux:
+source venv/bin/activate
+Windows:
+.venv\Scripts\activate.bat
+
+2. Установить зависимости
+pip install -r requirements.txt
+
+3. Скопировать config_example.yaml в config.yaml и заполнить параметры своими значениями( без <> )
+
+4. Импортировать пользователей в БД
+4.1 Заполненный файл users.xlsx должен находиться в корне проекта
+4.2 Произвести синхронизацию вызвав
+python usermanager.py
+
+5. Для запуска бота нужно выполнить
+python main.py
